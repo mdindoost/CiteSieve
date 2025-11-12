@@ -192,7 +192,6 @@ open sgc_full.filtered.csv  # or use pandas
 
 ## 📫 Contact
 
-Maintainer: **Mohammad D.**  
-Institution: NJIT, Bader Lab  
-Email: md72@njit.edu  
+Maintainer: **Mohammad Dindoost**  
+Email: md724@njit.edu  
 Version: 0.1-pre

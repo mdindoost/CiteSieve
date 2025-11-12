@@ -1,0 +1,28 @@
+[project]
+name = "citesieve"
+version = "0.1.0"
+description = "CiteSieve: Collect, filter, and analyze citations to estimate actual usage (not surveys)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{ name = "Your Name", email = "you@example.com" }]
+dependencies = [
+  "requests>=2.31.0",
+  "tqdm>=4.66.0",
+  "pandas>=2.1.0",
+  "pyyaml>=6.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/<your-user>/CiteSieve"
+
+[project.scripts]
+citesieve = "citesieve.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+

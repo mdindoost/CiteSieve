@@ -1,0 +1,21 @@
+filters:
+  exclude_types:
+    - book
+    - book-chapter
+    - dissertation
+    - report
+    - magazine
+    - poster
+    - lecture
+
+  title_patterns:
+    survey: '\bsurvey\b|\boverview\b|\bsummary\b'
+    review: '\breview\b|\bcomparative study\b'
+    benchmark: '\bbenchmark\b|\bevaluation\b|\bcomparison\b'
+    tutorial: '\btutorial\b|\bprimer\b'
+    state_of_the_art: 'state[-\s]?of[-\s]?the[-\s]?art'
+
+usage_hints:
+  used: '\buse[sd]?\b|\bapply[ied]\b|\bimplement(ed)?\b|\bintegrat(ed|es)\b'
+  build_on: '\bextend(ed|s)?\b|\bbuild(s|ing)?\s+on\b'
+  based_on: '\bbased\s+on\b|\badopt(ed|ing)?\b'

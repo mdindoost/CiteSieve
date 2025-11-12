@@ -1,11 +1,11 @@
 [project]
 name = "citesieve"
 version = "0.1.0"
-description = "CiteSieve: Collect, filter, and analyze citations to estimate actual usage (not surveys)."
+description = "CiteSieve: analyze citations (OpenAlex + Semantic Scholar), filter reviews, estimate actual usage."
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
-authors = [{ name = "Your Name", email = "you@example.com" }]
+authors = [{ name = "Mohammad Dindoost", email = "md72@njit.edu" }]
 dependencies = [
   "requests>=2.31.0",
   "tqdm>=4.66.0",
@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/<your-user>/CiteSieve"
+Homepage = "https://github.com/mdindoost/CiteSieve"
 
 [project.scripts]
 citesieve = "citesieve.cli:main"
@@ -21,7 +21,16 @@ citesieve = "citesieve.cli:main"
 [tool.setuptools]
 package-dir = {"" = "src"}
 
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["citesieve*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
+
+
 

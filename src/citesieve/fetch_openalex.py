@@ -4,7 +4,7 @@ from typing import List, Optional
 from tqdm import tqdm
 from .utils import get_json
 
-def fetch_citers_openalex(core_id: str, ua: str, year_min: Optional[int], year_max: Optional[int]) -> list[dict]:
+def fetch_citers_openalex(core_id: str, ua: str, year_min: Optional[int], year_max: Optional[int]) -> List[dict]:
     base = "https://api.openalex.org/works"
     filt = f"cites:W{core_id}"
     if year_min or year_max:

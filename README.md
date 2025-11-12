@@ -2,6 +2,8 @@
 
 CiteSieve is a lightweight command-line tool that analyzes citations of a given academic paper across **OpenAlex** and **Semantic Scholar**. It helps you identify which papers *actually use* the idea (vs. just mentioning or reviewing it). Perfect for meta-research, survey curation, or evaluating research influence.
 
+---
+
 ## Why
 
 Google Scholar numbers are high but opaque (merged versions, many doc types). CiteSieve gives you:
@@ -10,7 +12,7 @@ Google Scholar numbers are high but opaque (merged versions, many doc types). Ci
 - Reproducible filters (type and title-based)
 - A usage estimate via lightweight textual signals
 
----
+
 ---
 
 ## 🚀 Features
@@ -151,14 +153,6 @@ usage_hints:
 http:
   user_agent: "citesieve/0.1 (contact: md72@njit.edu)"
 ```
-
-## Why
-
-Google Scholar numbers are high but opaque (merged versions, many doc types). CiteSieve gives you:
-
-- Transparent sources (OpenAlex + Semantic Scholar)
-- Reproducible filters (type and title-based)
-- A usage estimate via lightweight textual signals
 
 ---
 

@@ -151,7 +151,7 @@ usage_hints:
   - "\bpost[-\s]?propagation\b"
 
 http:
-  user_agent: "citesieve/0.1 (contact: md72@njit.edu)"
+  user_agent: "citesieve/0.1 (contact: md724@njit.edu)"
 ```
 
 ---
